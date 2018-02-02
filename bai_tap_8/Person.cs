@@ -1,44 +1,48 @@
 namespace bai_tap_8
 {
-    public class Person
+       
+     class Shape
     {
-        public string Name{get;set;}
-        public int Age{get;set;}
+        public int Width{get;set;}
+        public int Height{get;set;}
 
-        public string Hair{get;set;}
-        public Person(){}
-        public  Person(string name, int age,string hair) {
-            this.Name = Name;
-            this.Age=age;
-            this.Hair=hair;
+        public Shape(){}
+        public Shape(int width , int height){
+             this.Width = width;
+             this.Height=height;
         }
-        public virtual void Character(){
-            System.Console.WriteLine("Person have  character ... ");
+        public virtual void getArea(int a , int b)
+        {
+           
         }
-        public virtual void Run(){
-          System.Console.WriteLine("Preson run");
+        public virtual void getPerimeter(int a,int b )
+        {
+          
         }
-        public virtual void Cry(){
-            System.Console.WriteLine("Person cry");
-        }
+
     }
-    class Student:Person
+    class Square:Shape
     {
-        private int ID{get;set;}
-        public Student(string name, int age,string hair,int id):base (name,age,hair)
+        public override void getArea(int a , int b)
         {
-            this.ID=1234;
+                System.Console.WriteLine("dien tich hinh vuong {0} * {1} = {2}",a,b,a*b);
         }
-        public override void Character()
+        public override void getPerimeter(int a,int b)
         {
-            System.Console.WriteLine("student  character ....");
-        }
-        public override void Run(){
-            System.Console.WriteLine("student Run ....");
-        }
-        public override void Cry(){
-            System.Console.WriteLine("student cry ....");
+            System.Console.WriteLine("tinh chu vi hinh vuong {0} * {1} = {2}",a,b,a*4);
         }
     }
-    
+    class Rectangle:Shape
+    {
+         public override void getArea(int width, int height)
+        {
+            System.Console.WriteLine("dien tich hinh chu nhat {0} * {1} = {2}",width,height,width*height);
+        }
+        public override void getPerimeter(int width , int height)
+        {
+            System.Console.WriteLine("chu vi  hinh chu nhat {0} * {1} = {2}",width,height,(2*(width*height)));
+        }
+        
+    }
+   
 }

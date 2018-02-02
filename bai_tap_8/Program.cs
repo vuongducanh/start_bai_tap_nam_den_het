@@ -9,6 +9,13 @@ namespace bai_tap_8
             Calculator.Add(20,10);
             Calculator.Add(50.9,20.9);
             Calculator.Add("duc","anh");
+
+            Square vuong1 = new Square();
+            vuong1.getArea(10,20);
+            vuong1.getPerimeter(10,20);
+            Rectangle hcn1 = new Rectangle();
+            hcn1.getArea(5,6);
+            hcn1.getPerimeter(5,6);
         }
     }
     class Calculator
