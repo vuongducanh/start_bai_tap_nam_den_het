@@ -1,5 +1,7 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 namespace bai_tap_8
 {
     class Program
@@ -16,6 +18,10 @@ namespace bai_tap_8
             Rectangle hcn1 = new Rectangle();
             hcn1.getArea(5,6);
             hcn1.getPerimeter(5,6);
+
+            Iphone iphone1 = new Iphone();
+            iphone1.Call(); 
+
         }
     }
     class Calculator

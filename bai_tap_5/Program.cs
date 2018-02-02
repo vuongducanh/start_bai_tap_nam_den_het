@@ -147,10 +147,11 @@ namespace bai_tap_5
         {
             // bai5_1();
             // bai5_2();
-            bai5_3();
+            // bai5_3();
             // bai5_4();
             // bai5_5();
             // bai 6 lam o phan khac.
+            
         }
     }
 }
