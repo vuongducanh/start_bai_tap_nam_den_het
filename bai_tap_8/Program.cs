@@ -21,7 +21,11 @@ namespace bai_tap_8
 
             Iphone iphone1 = new Iphone();
             iphone1.Call(); 
+            iphone1.Camera();
 
+            Samsung samsung1 = new Samsung();
+            samsung1.Camera();
+        
         }
     }
     class Calculator
