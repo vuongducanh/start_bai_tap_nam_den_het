@@ -28,9 +28,15 @@ namespace bai_tap_8
 
             Product apple = new Product("apple" ,10, 20.000d);
             Product banana = new Product("banana" ,102, 20.000d);
+            Product apple2 = new Product("banana" ,102, 20.000d);
+
             Inventory inventory1 = new Inventory();
             inventory1.num(apple);
             inventory1.num(banana);
+            inventory1.num(banana);
+            inventory1.num(apple2);
+            System.Console.WriteLine("kho hang co {0} loại sản phẩm",Inventory.kq());
+            System.Console.WriteLine("tổng sản phẩn kho hang của bạn la {0}",Product.tinhtongsp());
         
         }
     }
