@@ -25,6 +25,12 @@ namespace bai_tap_8
 
             Samsung samsung1 = new Samsung();
             samsung1.Camera();
+
+            Product apple = new Product("apple" ,10, 20.000d);
+            Product banana = new Product("banana" ,102, 20.000d);
+            Inventory inventory1 = new Inventory();
+            inventory1.num(apple);
+            inventory1.num(banana);
         
         }
     }
