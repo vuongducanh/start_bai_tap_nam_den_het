@@ -11,11 +11,11 @@ namespace bai_tap_8
             this.Name = name;
             this.Amount = amount;
             this.Price= price;
-            bienden+=amount;
+            count+=amount;
         }
-        public static int bienden=0;
+        public static int count=0;
         public static int tinhtongsp(){
-            return bienden;
+            return count;
         }
     }
     class Inventory
