@@ -8,7 +8,7 @@ namespace bai_tap_7
     {
         static void Main(string[] args)
         {
-            var car1 = new Car();
+            var car1 = new Car();   //car() ở đây là tạo một đối tượng từ class Car. 
             var car2 = new Car("white", 2005);
 
             var car3 = new Car("blue", 2008, "bugatti", 260);
@@ -35,28 +35,29 @@ namespace bai_tap_7
         public int Year { get; set; } = 2017;
         public string Brand { get; set; } = "Hyundai";
         public int Mileage { get; set; } = 780;
-        public static int count;
-        public static int kqcount()
+        public static int count;   //tạo một biến count để một lần tao một đối tương thì biến count này sẽ công thêm một để cho lâp trình viên quản lí một cách dễ dàng ;
+       
+        public Car()    // car() mà không truyền vào gì là constructor mắc định
         {
-            return count;
+            count++;     
         }
-        public Car()
-        {
-            count++;
-        }
-        public Car(string color, int year)
+        public Car(string color, int year)  //constructor với hai tham số truyền vào
         {
             Color = color;
             Year = year;
             count++;
         }
-        public Car(string color, int year, string brand, int mileage)
+        public Car(string color, int year, string brand, int mileage)      //constructor với 4 tham số truyền vào.
         {
             Color = color;
             Year = year;
             Brand = brand;
             Mileage = mileage;
             count++;
+        }
+         public static int kqcount()
+        {
+            return count;
         }
     }
     

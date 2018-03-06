@@ -26,10 +26,11 @@ namespace bai_tap_7
         private int ID { get; set;}
         private string Degree{get;set;} 
         // tu khai bao bien private va phuong get - set
-        public Student(string name, int age, string email, int phone, int id) : base(name, age, email, phone)
+        public Student(string name, int age, string email, int phone, int id) : base(name, age, email, phone)  
         {
             this.ID = id;
         }
+        // từ khóa base để thể hiện lớp con kế thừa các thuộc tính của lớp cha vốn có;
         public Student(string name,int age, string email,string degree):base(name,age,email)
         {
             this.Degree=degree;
