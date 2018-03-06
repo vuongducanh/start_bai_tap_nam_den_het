@@ -11,11 +11,11 @@ namespace bai_tap_8
             this.Name = name;
             this.Amount = amount;
             this.Price= price;
-            count+=amount;
+            count+=amount;    // dòng này là để tính số lượng  hàng 
         }
         public static int count=0;
         public static int tinhtongsp(){
-            return count;
+            return count;   //sau đó trả về kết quả vủa tổng số lương hàng 
         }
     }
     class Inventory

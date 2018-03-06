@@ -6,19 +6,14 @@ namespace bai_tap_8
         public int Width{get;set;}
         public int Height{get;set;}
 
-        public Shape(){}
-        public Shape(int width , int height){
-             this.Width = width;
+        public Shape(){}    //constructors 
+        public Shape(int width , int height){     //constructor
+             this.Width = width;  
              this.Height=height;
         }
-        public virtual void getArea(int a , int b)
-        {
-           
-        }
-        public virtual void getPerimeter(int a,int b )
-        {
-          
-        }
+        public virtual void getArea(int a , int b){}  //phương thức
+        public virtual void getPerimeter(int a,int b ) {} // phương thức
+       
 
     }
     class Square:Shape
